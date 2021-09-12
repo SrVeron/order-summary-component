@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+p{
+    color: hsl(224, 23%, 55%);
+    line-height: 1.8;
+}
+
+
+.fondo{
+    background: url(/images/pattern-background-desktop.svg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -999;
+}
+
+.contenedor{
+    background-color: #fff;
+    margin: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px hsl(224, 23%, 55%, .10);
+}
+
+.contenedor h1{
+    color: hsl(223, 47%, 23%);
+    margin: 10px 0;
+}
+
+.contenedor img.dance{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.contenedor p.texto{
+    padding: 20px;
+}
+
+.contenedor .plan{
+    background-color: hsl(225, 100%, 98%);
+    margin: 30px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor .plan article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan article .icon{
+    padding-right: 10px;
+}
+
+.contenedor .botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px 15px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.btn--change{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.btn--pay{
+    color: #fff;
+    background-color:hsl(245, 75%, 52%);
+    padding: 10px 50px;
+    margin-bottom: 10px;
+}
+
+.btn--cancel{
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+}
+
+.btn--change:hover,
+.btn--pay:hover{
+    opacity: .7;
+}
+
+.btn--cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
